@@ -5,10 +5,14 @@
 function sortTable() {
   const table = document.querySelector('table');
 
+  if (!table) {
+    return;
+  }
+
   const thead = table.querySelector('thead');
   const tbody = table.querySelector('tbody');
 
-  if (!table || !thead || !tbody) {
+  if (!thead || !tbody) {
     return;
   }
 
